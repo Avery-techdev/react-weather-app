@@ -1,0 +1,38 @@
+form {
+  display: inline;
+  float: right;
+  font-family: "Quicksand", sans-serif;
+}
+
+.form-control {
+  display: inline;
+  width: auto;
+}
+
+.enter {
+  position: relative;
+  margin: 40px 70px 0 0;
+  border-radius: 5px;
+}
+
+.submit {
+  position: relative;
+  float: left;
+  font-size: 15px;
+  margin: 5px 0px 0 70px;
+  background-color: #14274e;
+  border: 1px solid #14274e;
+  border-radius: 5px;
+  color: #ffffff;
+}
+
+.current {
+  position: relative;
+  float: right;
+  font-size: 15px;
+  margin: 5px 70px 0 0;
+  background-color: #dee8ed;
+  border: 1px solid #14274e;
+  border-radius: 5px;
+  color: #14274e;
+}
