@@ -1,0 +1,18 @@
+.box {
+  background-image: radial-gradient(
+    circle 900px at 10.3% 17%,
+    rgba(3, 39, 93, 1) 0%,
+    rgba(37, 28, 28, 1) 90%
+  );
+  color: #ffffff;
+  max-width: 500px;
+  border: 1px solid #14274e;
+  margin: 30px auto;
+  border-radius: 50px;
+}
+
+.update {
+  position: absolute;
+  float: right;
+  margin: 50px 0 0 30px;
+}
