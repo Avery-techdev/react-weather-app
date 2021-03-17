@@ -1,0 +1,43 @@
+h2 {
+  font-size: 100px;
+  text-align: center;
+  padding: 10px;
+  margin-top: 50px;
+}
+
+a {
+  text-decoration: none;
+  color: #00a6ff;
+}
+
+a:hover {
+  color: #ffffff;
+}
+
+.weather-temperature .active {
+  color: #ffffff;
+  cursor: default;
+}
+
+.weather-temperature .active:hover {
+  text-decoration: none;
+}
+
+.units {
+  display: inline;
+  position: relative;
+  font-size: 18px;
+  top: -75px;
+}
+
+#temperature {
+  display: inline;
+}
+
+#celsius {
+  padding: 5px;
+}
+
+#fahrenheit {
+  padding: 5px;
+}
