@@ -17,7 +17,7 @@ export default function App() {
        <a
         className="link"
         href="https://github.com/Avery-techdev/react-weather-app"
-        target="_blank">
+        target="_blank" rel="noreferrer">
          Open-source Code
        </a>{" "}
         by Annabell Hauschild
