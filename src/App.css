@@ -1,20 +1,18 @@
 body {
   font-family: "Quicksand", sans-serif;
   color: #14274e;
+  margin: 0 auto;
 }
-
-
 
 .frame {
   width: 660px;
-  margin: 100px 20px;
+  margin: 100px 20px 0;
   border-radius: 20px;
   background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
 }
 
 .signature {
   font-size: 20px;
-  text-align: left;
 }
 
 .link:hover {
