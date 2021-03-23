@@ -1,14 +1,14 @@
+import Weather from "./Weather";
+
 import "./App.css";
-import City from "./City";
-import Box from "./Box";
+
 
 
 export default function App() {
   return (
     <div className="container">
      <div className="frame shadow">
-      <City />
-      <Box />
+      <Weather />
       {/* Placeholder for he new forecast */}
      <div className="row weather-forecast" id="forecast" />
      </div>

@@ -3,9 +3,9 @@ import Date from "./Date";
 import Temperature from "./Temperature";
 import Properties from "./Properties";
 
-import "./Box.css";
+import "./DisplayWeather.css";
 
-export default function Box () {
+export default function DisplayWeather () {
 return ( <div className="row box shadow-sm">
           <div className="update">
             last updated

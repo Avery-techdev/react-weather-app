@@ -1,7 +1,17 @@
+h1 {
+  display: inline;
+  font-size: 55px;
+  font-weight: bold;
+}
+
 form {
   display: inline;
   float: right;
   font-family: "Quicksand", sans-serif;
+}
+
+.city {
+  padding: 20px 0 0 80px;
 }
 
 .form-control {
