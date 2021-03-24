@@ -2,12 +2,12 @@ import React from "react";
 
 import "./Temperature.css"
 
-export default function Temperature() {
+export default function Temperature(props) {
 return (
 <div className="col-6 weather-temperature">
           <h2>
             <div id="temperature">
-              1
+              {props.temperature}
             </div>
             <span className="units">
               <span>

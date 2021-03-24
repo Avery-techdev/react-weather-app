@@ -8,7 +8,7 @@ export default function App() {
   return (
     <div className="container">
      <div className="frame shadow">
-      <Weather />
+      <Weather defaultCity="New York" />
       {/* Placeholder for he new forecast */}
      <div className="row weather-forecast" id="forecast" />
      </div>

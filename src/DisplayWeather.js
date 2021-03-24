@@ -5,14 +5,15 @@ import Properties from "./Properties";
 
 import "./DisplayWeather.css";
 
-export default function DisplayWeather () {
-return ( <div className="row box shadow-sm">
-          <div className="update">
+export default function DisplayWeather (props) {
+ return ( 
+ <div className="row box shadow-sm">
+          <div className="update ">
             last updated
           </div>
-          <Date />
-          <Temperature />
-          <Properties />
+          <Date date={props.data.date}/>
+          <Temperature temperature={props.data.temperature} />
+          <Properties wind={props.data.wind} humidity={props.data.humidity} description={props.data.description}/>
          </div>
 )
 }
