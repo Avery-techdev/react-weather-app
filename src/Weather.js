@@ -18,6 +18,7 @@ export default function Weather(props) {
       city: response.data.name,
       description: response.data.weather[0].description,
       date: "Friday 17:06",
+      feelsLike: response.data.main.feels_like,
     });
   }
 

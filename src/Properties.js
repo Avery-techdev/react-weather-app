@@ -10,9 +10,22 @@ export default function Properties(props) {
            </div> 
            <div className="col-3 property-table properties">
             <br />
-             humidity wind
+            feels like humidity wind
            </div>
-           <div className="col-3 property-table">
+           <div className="col-3 property-table weather-temperature">
+           <br />
+            <span id="humidity">{props.feelsLike}</span>
+            <span className="feelsLikeUnits">
+              <span>
+              <a href="/" id="celsius" className="active">
+                °C
+              </a> 
+              |
+            </span>
+            <a href="/" id="fahrenheit">
+              °F
+            </a>
+            </span>
             <br />
             <span id="humidity">{props.humidity}</span>%
             <br />

@@ -1,3 +1,12 @@
+a {
+  text-decoration: none;
+  color: #00a6ff;
+}
+
+a:hover {
+  color: #ffffff;
+}
+
 .currently-icon {
   width: 150px;
   margin: 20px 20px 30px 40px;
@@ -14,6 +23,22 @@
   text-align: right;
 }
 
+.weather-temperature .active {
+  color: #ffffff;
+  cursor: default;
+}
+
+.weather-temperature .active:hover {
+  text-decoration: none;
+}
+
+.feelsLikeUnits {
+  display: inline;
+  position: relative;
+  font-size: 14px;
+  top: -10px;
+}
+
 #description {
   font-size: 20px;
   text-align: left;
@@ -22,4 +47,12 @@
 
 #icon {
   display: inline-block;
+}
+
+#celsius {
+  padding: 5px;
+}
+
+#fahrenheit {
+  padding: 5px;
 }
