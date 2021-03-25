@@ -17,8 +17,8 @@ export default function Weather(props) {
       humidity: Math.round(response.data.main.humidity),
       city: response.data.name,
       description: response.data.weather[0].description,
-      date: "Friday 17:06",
-      feelsLike: response.data.main.feels_like,
+      date: new Date(response.data.dt * 1000),
+      feelsLike: Math.round(response.data.main.feels_like),
     });
   }
 
