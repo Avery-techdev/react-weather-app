@@ -13,7 +13,7 @@ export default function DisplayWeather (props) {
           </div>
           <Date date={props.data.date}/>
           <Temperature temperature={props.data.temperature} />
-          <Properties feelsLike={props.data.feelsLike} wind={props.data.wind} humidity={props.data.humidity} description={props.data.description}/>
+          <Properties feelsLike={props.data.feelsLike} wind={props.data.wind} humidity={props.data.humidity} description={props.data.description} icon={props.data.icon}/>
          </div>
 )
 }
