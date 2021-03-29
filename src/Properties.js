@@ -6,7 +6,7 @@ export default function Properties(props) {
   return ( <div className="row">
             <div className="col-6">
             <span className="text-capitalize" id="description">{props.description}</span>
-            <img src={`/img/currently/${props.icon}.png`} alt="sunny" className="currently-icon" id="icon" />
+            <img src={`/img/currently/${props.icon}.png`} alt={props.description} className="currently-icon" id="icon" />
            </div> 
            <div className="col-3 property-table properties">
             <br />
