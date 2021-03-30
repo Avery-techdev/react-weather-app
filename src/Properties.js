@@ -1,8 +1,10 @@
 import React from "react";
+import FeelsLikeTemp from "./FeelsLikeTemp";
 
 import "./Properties.css";
 
 export default function Properties(props) {
+  const feelsLike = props.feelsLike
   return ( <div className="row">
             <div className="col-6">
             <span className="text-capitalize" id="description">{props.description}</span>
@@ -14,18 +16,7 @@ export default function Properties(props) {
            </div>
            <div className="col-3 property-table weather-temperature">
            <br />
-            <span id="humidity">{props.feelsLike}</span>
-            <span className="feelsLikeUnits">
-              <span>
-              <a href="/" id="celsius" className="active">
-                °C
-              </a> 
-              |
-            </span>
-            <a href="/" id="fahrenheit">
-              °F
-            </a>
-            </span>
+            <FeelsLikeTemp celsius={feelsLike}/>
             <br />
             <span id="humidity">{props.humidity}</span>%
             <br />

@@ -32,13 +32,6 @@ a:hover {
   text-decoration: none;
 }
 
-.feelsLikeUnits {
-  display: inline;
-  position: relative;
-  font-size: 14px;
-  top: -10px;
-}
-
 #description {
   font-size: 20px;
   text-align: left;
@@ -49,10 +42,4 @@ a:hover {
   display: inline-block;
 }
 
-#celsius {
-  padding: 5px;
-}
 
-#fahrenheit {
-  padding: 5px;
-}

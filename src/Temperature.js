@@ -15,7 +15,7 @@ export default function Temperature(props) {
     setUnit("celsius");
   }
 
-  function fahrenheit(params) {
+  function fahrenheit() {
     return Math.round((props.celsius * 9) / 5 +32);
   }
 
