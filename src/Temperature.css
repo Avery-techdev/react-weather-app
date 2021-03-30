@@ -7,19 +7,11 @@ h2 {
 
 a {
   text-decoration: none;
-  color: #00a6ff;
+  color: #67caff;
 }
 
 a:hover {
   color: #ffffff;
-}
-
-.weather-temperature .active {
-  color: #ffffff;
-  cursor: default;
-}
-
-.weather-temperature .active:hover {
   text-decoration: none;
 }
 
