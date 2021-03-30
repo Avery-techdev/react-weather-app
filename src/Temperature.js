@@ -1,26 +1,65 @@
-import React from "react";
+import React, { useState } from "react";
 
 import "./Temperature.css"
 
 export default function Temperature(props) {
-return (
-<div className="col-6 weather-temperature">
-          <h2>
-            <div id="temperature">
-              {props.temperature}
-            </div>
-            <span className="units">
-              <span>
-              <a href="/" id="celsius" className="active">
+  const [unit, setUnit] = useState ("celsius");
+
+  function showFahrenheit(event) {
+    event.preventDefault();
+    setUnit("fahrenheit");
+  }
+
+  function showCelsius(event) {
+    event.preventDefault();
+    setUnit("celsius");
+  }
+
+  function fahrenheit(params) {
+    return Math.round((props.celsius * 9) / 5 +32);
+  }
+
+  if (unit === "celsius") {
+    return (
+      <div className="col-6 weather-temperature">
+        <h2>
+          <div id="temperature">
+            {props.celsius}
+          </div>
+          <span className="units">
+            <span id="celsius">
+            °C
+            </span>
+            |
+          <a href="/" id="fahrenheit" onClick={showFahrenheit} >
+            °F
+          </a>
+          </span>
+        </h2>
+      </div>
+      )  
+  } else {
+    return (
+      <div className="col-6 weather-temperature">
+        <h2>
+          <div id="temperature">
+            {fahrenheit()}
+          </div>
+          <span className="units">
+            <span>
+              <a href="/" id="celsius" onClick={showCelsius} >
                 °C
-              </a> 
+              </a>
               |
             </span>
-            <a href="/" id="fahrenheit">
+            <span id="fahrenheit" >
               °F
-            </a>
             </span>
-           </h2>
-        </div>
-)
+            
+          </span>
+        </h2>
+      </div>
+      )  
+  }
+  
 }
