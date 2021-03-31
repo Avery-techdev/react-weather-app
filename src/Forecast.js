@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import axois from "axios";
 import ForecastPreview from "./ForecastPreview";
 
 import "./Forecast.css";
