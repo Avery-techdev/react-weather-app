@@ -1,7 +1,9 @@
 import React, { useState } from "react";
 import axios from 'axios';
 import DisplayWeather from "./DisplayWeather";
+import Forecast from "./Forecast";
 import Loader from "react-loader-spinner";
+
 
 import "./Weather.css";
 
@@ -54,6 +56,7 @@ export default function Weather(props) {
 
   if (weatherData.ready) {
     return (
+      <div>
       <div className="row">
         <div className="city col-6">
          <h1 id="city">{weatherData.city}</h1>
@@ -83,9 +86,11 @@ export default function Weather(props) {
               onClick={getCurrentLocation}
             />
           </form>
+          </div>
         </div>
         <DisplayWeather data={weatherData} />
-      </div>
+        <Forecast data={weatherData} />
+    </div>
       );
   } else {
     search();

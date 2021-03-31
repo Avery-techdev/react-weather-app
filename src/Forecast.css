@@ -1,0 +1,17 @@
+img {
+  margin: 0;
+}
+
+.weather-forecast {
+  text-align: center;
+  margin: 0 50px 0;
+  padding: 20px 0 50px;
+  font-size: 24px;
+}
+
+.forecast-icon {
+  display: block;
+  width: 80px;
+  padding: 15px;
+  margin: 0 auto;
+}
