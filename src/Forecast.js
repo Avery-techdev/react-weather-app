@@ -1,8 +1,9 @@
 import React, { useState } from "react";
+import axios from "axios";
 import ForecastPreview from "./ForecastPreview";
 
 import "./Forecast.css";
-import axios from "axios";
+
 
 export default function Forecast(props) {
   const icon = props.data.icon;
@@ -25,7 +26,7 @@ export default function Forecast(props) {
     )
     
   } else {
-    const apiKey = "d2589bf15b56e719d49ff19cf5af97cb";
+    const apiKey = "e2a4187aa3a4eb6d65c629a7f3e2bfd7";
   let apiUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${props.data.city}&appid=${apiKey}&units=metric`;
   axios.get(apiUrl).then(handleForecastResponse);
   return (
