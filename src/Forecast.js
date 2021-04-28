@@ -18,10 +18,28 @@ export default function Forecast(props) {
 
   if (loaded && props.data.city === forecast.city.name) {
     return (
-      <div className="row weather-forecast" id="forecast">
+      <div className="weather-forecast" id="forecast">
+        <div className="row">
         {forecast.list.slice(0, 6).map(function(forecastItem){
           return <ForecastPreview data={forecastItem} icon={icon} description={description} />
         })}
+        </div>
+        <div className="row">
+          <div className="col">
+            <div className="Forecast-day">
+            Thu
+            </div>
+            <img src={`/img/forecast/${icon}.png`} alt={description} className="forecast-icon" id="icon" />
+            <div className="Forecast-temperatures">
+              <span className="Forecast-temperature-max">
+              19°
+              </span>
+              <span className="Forecast-temperature-min">
+              10°
+              </span>
+            </div> 
+          </div>
+        </div>
       </div>
     )
     
