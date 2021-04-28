@@ -10,18 +10,30 @@ export default function Forecast(props) {
   const description = props.data.description;
   const [loaded, setLoaded] = useState(false);
   const [forecast, setForecast] = useState(null);
+
+
+
   function handleForecastResponse(response) {
-    setForecast(response.data);
+    console.log(response.data)
+    setForecast(response.data.hourly);
     setLoaded(true);
     
   }
 
-  if (loaded && props.data.city === forecast.city.name) {
+  if (loaded) {
     return (
-      <div className="weather-forecast" id="forecast">
+      <div className="weather-forecast">
         <div className="row">
-        {forecast.list.slice(0, 6).map(function(forecastItem){
-          return <ForecastPreview data={forecastItem} icon={icon} description={description} />
+        {forecast.map(function(forecast, index){
+          if (index > 0 && index < 7) {
+            return (
+              <div key={index}> 
+                <ForecastPreview data={forecast} icon={icon} description={description} />
+              </div>
+            ) 
+            
+          }
+          
         })}
         </div>
         <div className="row">
@@ -45,11 +57,13 @@ export default function Forecast(props) {
     
   } else {
     const apiKey = "e2a4187aa3a4eb6d65c629a7f3e2bfd7";
-  let apiUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${props.data.city}&appid=${apiKey}&units=metric`;
-  axios.get(apiUrl).then(handleForecastResponse);
-  return (
-    null
-  );
+    let latitude = props.data.coordinates.lat;
+    let longitude = props.data.coordinates.lon;
+    let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=metric`;
+    axios.get(apiUrl).then(handleForecastResponse);
+    return (
+      null
+    );
   }
 
   

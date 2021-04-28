@@ -8,7 +8,8 @@ export default function ForecastPreview(props) {
   }
 
   function temperature() {
-    let temperature = Math.round(props.data.main.temp)
+    console.log(props.data)
+    let temperature = Math.round(props.data.temp)
 
     return `${temperature}°C`
   }
