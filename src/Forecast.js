@@ -25,7 +25,7 @@ export default function Forecast(props) {
       <div className="weather-forecast">
         <div className="row">
         {forecast.map(function(forecast, index){
-          if (index > 0 && index < 7) {
+          if (index > 0 && index < 6) {
             return (
               <div key={index}> 
                 <ForecastPreview data={forecast} icon={icon} description={description} />

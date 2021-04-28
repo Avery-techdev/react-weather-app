@@ -2,6 +2,10 @@ img {
   margin: 0;
 }
 
+.col-2 {
+  max-width: 100%;
+}
+
 .weather-forecast {
   text-align: center;
   margin: 0 50px 0;
@@ -20,3 +24,4 @@ img {
   opacity: 0.6;
   margin-left: 5px;
 }
+
