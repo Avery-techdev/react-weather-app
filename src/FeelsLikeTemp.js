@@ -28,7 +28,7 @@ export default function FeelsLikeTemp(props) {
             °C
             </span>
             |
-          <a href="/" id="fahrenheit" onClick={showFahrenheit}>
+          <a href="/" rel="noreferrer" id="fahrenheit" onClick={showFahrenheit}>
             °F
           </a>
             </span>
@@ -40,7 +40,7 @@ export default function FeelsLikeTemp(props) {
     <span>
       <span>{fahrenheit()}</span>
             <span className="feelsLikeUnits">
-              <a href="/" id="celsius" onClick={showCelsius}>
+              <a href="/" rel="noreferrer" id="celsius" onClick={showCelsius}>
                 °C
               </a>
               |

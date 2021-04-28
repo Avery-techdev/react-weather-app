@@ -31,7 +31,7 @@ export default function Temperature(props) {
             °C
             </span>
             |
-          <a href="/" id="fahrenheit" onClick={showFahrenheit} >
+          <a href="/" id="fahrenheit" rel="noreferrer" onClick={showFahrenheit} >
             °F
           </a>
           </span>
@@ -47,7 +47,7 @@ export default function Temperature(props) {
           </div>
           <span className="units">
             <span>
-              <a href="/" id="celsius" onClick={showCelsius} >
+              <a href="/" id="celsius" rel="noreferrer" onClick={showCelsius} >
                 °C
               </a>
               |
