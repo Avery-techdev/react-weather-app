@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import axios from "axios";
 import ForecastPreview from "./ForecastPreview";
 
@@ -11,10 +11,12 @@ export default function Forecast(props) {
   const [loaded, setLoaded] = useState(false);
   const [forecast, setForecast] = useState(null);
 
-
+  useEffect(() => {
+    setLoaded(false);
+  }, [props.data.coordinates]);
 
   function handleForecastResponse(response) {
-    console.log(response.data)
+    console.log(response.data.hourly);
     setForecast(response.data.hourly);
     setLoaded(true);
     
