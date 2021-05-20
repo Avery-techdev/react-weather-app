@@ -22,7 +22,7 @@ export default function ForecastDaily(props) {
 
   return (
     <div className="col">
-            <div className="Forecast-day">
+          <div className="Forecast-day">
               {day()}
             </div>
             <img src={`/img/forecast/${props.dailyForecast.weather[0].icon}.png`} alt={props.description} className="forecast-icon" id="icon" />
