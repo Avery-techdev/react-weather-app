@@ -42,7 +42,7 @@ export default function Forecast(props) {
           return null;
         })}
         </div>
-        <div className="row daily">
+        <div className="row daily border-top">
           {dailyForecast.map(function(dailyForecast, index){
             if (index < 5){
               return (
